@@ -16,6 +16,6 @@ This example demonstrates how to load more contacts using htmx. The initial page
  view which contains the first 3 contacts. When you click the load contacts button a call is made to the `_01/ContactsController` 
 to request the next 3 contacts. The response is then inserted into the DOM using htmx.
 
-![Load More Contacts](./images/load-more-contacts.PNG)
+![Load More Contacts](./images/load-more-contacts.png)
 
 ## 02 - Add new Contact (Coming Soon!)
