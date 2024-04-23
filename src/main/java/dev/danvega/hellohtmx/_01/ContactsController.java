@@ -16,8 +16,8 @@ public class ContactsController {
 
     private final Faker faker;
 
-    public ContactsController() {
-        this.faker = new Faker();
+    public ContactsController(Faker faker) {
+        this.faker = faker;
     }
 
     @GetMapping(value = "", produces = MediaType.TEXT_HTML_VALUE)
