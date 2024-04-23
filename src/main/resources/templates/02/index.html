@@ -39,11 +39,11 @@
                                 </tr>
                                 </thead>
                                 <tbody class="divide-y divide-gray-800">
-                                <tr>
-                                    <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-white sm:pl-0">Lindsay Walton</td>
-                                    <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-300">Front-end Developer</td>
-                                    <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-300">lindsay.walton@example.com</td>
-                                    <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-300">Member</td>
+                                <tr th:each="user : ${users}">
+                                    <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-white sm:pl-0" th:text="${user.name()}">Name</td>
+                                    <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-300" th:text="${user.title()}">Title</td>
+                                    <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-300" th:text="${user.email()}">Email</td>
+                                    <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-300" th:text="${user.role}">Role</td>
                                 </tr>
 
                                 <!-- More people... -->

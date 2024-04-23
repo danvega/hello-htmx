@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>New User Form</title>
+</head>
+<body>
+<form th:fragment="frmNewUser">
+    <div>
+        <label for="name" class="block text-sm font-medium leading-6 text-gray-900">Name</label>
+        <div class="mt-2">
+            <input type="text"
+                   name="name"
+                   id="name"
+                   th:value="${user.name()}"
+                   class="block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+        </div>
+    </div>
+    <div>
+        <label for="title" class="block text-sm font-medium leading-6 text-gray-900">Title</label>
+        <div class="mt-2">
+            <input type="text"
+                   name="title"
+                   id="title"
+                   th:value="${user.title()}"
+                   class="block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+        </div>
+    </div>
+    <div>
+        <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email</label>
+        <div class="mt-2">
+            <input type="email"
+                   name="email"
+                   id="email"
+                   th:value="${user.email()}"
+                   class="block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+        </div>
+    </div>
+    <div>
+        <label for="role" class="block text-sm font-medium leading-6 text-gray-900">Role</label>
+        <select id="role" name="role" class="mt-2 block w-full rounded-md border-0 p-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6">
+            <option>Admin</option>
+            <option selected>User</option>
+            <option>Editor</option>
+            <option>Reviewer</option>
+        </select>
+    </div>
+</form>
+</body>
+</html>
