@@ -1,4 +1,4 @@
-package dev.danvega.hellohtmx._01;
+package dev.danvega.hellohtmx._03;
 
 import com.github.javafaker.Faker;
 import org.springframework.http.MediaType;

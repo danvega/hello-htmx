@@ -1,6 +1,5 @@
-package dev.danvega.hellohtmx._02;
+package dev.danvega.hellohtmx._04;
 
-import com.github.javafaker.Faker;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;

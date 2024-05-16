@@ -1,4 +1,4 @@
-package dev.danvega.hellohtmx._02;
+package dev.danvega.hellohtmx._04;
 
 import com.github.javafaker.Faker;
 import jakarta.annotation.PostConstruct;
