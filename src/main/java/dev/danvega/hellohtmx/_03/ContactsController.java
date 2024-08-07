@@ -23,13 +23,13 @@ public class ContactsController {
     @GetMapping(value = "", produces = MediaType.TEXT_HTML_VALUE)
     public String list(Model model) {
         model.addAttribute("contacts", createContacts(3));
-        return "01/index";
+        return "03/index";
     }
 
     @GetMapping("/load")
     public String getRows(Model model) {
         model.addAttribute("contacts", createContacts(3));
-        return "01/contact-row :: contact-row";
+        return "03/contact-row :: contact-row";
     }
 
     private List<Contact> createContacts(Integer count) {

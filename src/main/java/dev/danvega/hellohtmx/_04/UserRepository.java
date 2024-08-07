@@ -24,6 +24,11 @@ public class UserRepository {
         return users;
     }
 
+    public User save(User user) {
+        this.users.add(user);
+        return user;
+    }
+
     public User createFakeUser() {
         return new User(faker.name().fullName(), faker.job().title(), faker.internet().emailAddress(), "User");
     }
